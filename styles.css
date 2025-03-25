@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { text-align: center; background: #f5f5f5; }
+.navbar { background: darkred; padding: 15px; }
+.navbar a { color: white; text-decoration: none; padding: 10px 15px; font-size: 18px; margin: 5px; display: inline-block; }
+.navbar a:hover { background: #b30000; border-radius: 5px; }
+.container { display: flex; justify-content: center; padding: 20px; }
+.container h1{ color: #f5f5f5;}
+        .content1 { width: 65%; background: rgb(225, 216, 222); padding: 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        .content h2 { color: rgb(68, 4, 49); border-bottom: 1px solid rgb(138, 58, 110);  padding-bottom: 40px; margin-right: 400px; }
+        .content p { text-align: justify;font-size: 20px; margin-bottom: 10px; }
+
+        /* Sidebar for Images */
+        .sidebar { width: 30%; margin-left: 30px; }

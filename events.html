@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Event Management System</title>
+        <style>
+            body { font-family: Arial, sans-serif; text-align: center; }
+            .events-container { display: flex; justify-content: center; gap: 20px; }
+            .event { border: 1px solid #ccc; padding: 10px; cursor: pointer; width: 200px; }
+            .event img { width: 100%; height: auto; }
+            .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+            .modal-content { background: white; padding: 20px; width: 50%; margin: 10% auto; text-align: center; }
+            .close { cursor: pointer; color: red; font-size: 20px; }
+        </style>
+    </head>
+    <body>
+        <h1>College Event Management System</h1>
+        <div class="events-container">
+            <div class="event" onclick="showEvent('Annual Function', 'annual.jpg', 'An amazing annual function with cultural performances.')">
+                <img src="C:\Users\ZEAGATE\Downloads\e1.jpg" alt="Annual Function">
+                <p>Annual Function</p>
+            </div>
+            <div class="event" onclick="showEvent('Freshers Party', 'freshers.jpg', 'A grand welcome party for freshers.')">
+                <img src="C:\Users\ZEAGATE\Downloads\e2.jpg" alt="Freshers Party">
+                <p>Freshers Party</p>
+            </div>
+            <div class="event" onclick="showEvent('Job Seminar', 'job.jpg', 'A seminar with industry professionals.')">
+                <img src="C:\Users\ZEAGATE\Downloads\e3.jpg" alt="Job Seminar">
+                <p>Job Seminar</p>
+            </div>
+        </div>
+    
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="eventTitle"></h2>
+                <img id="eventImage" src="" alt="" style="width:100%; max-height:300px;">
+                <p id="eventDescription"></p>
+            </div>
+        </div>
+    
+        <script>
+            function showEvent(title, image, description) {
+                document.getElementById('eventTitle').innerText = title;
+                document.getElementById('eventImage').src = image;
+                document.getElementById('eventDescription').innerText = description;
+                document.getElementById('eventModal').style.display = 'block';
+            }
+    
+            function closeModal() {
+                document.getElementById('eventModal').style.display = 'none';
+            }
+        </script>
+    </body>
+    </html> -->
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management System</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .events-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+        .event {
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            width: 250px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .event:hover {
+            transform: scale(1.05);
+        }
+        .event img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+        .close {
+            cursor: pointer;
+            color: red;
+            font-size: 20px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color:rgb(77, 6, 67);">
+        <h1>College Event Management System</h1>
+        <div class="events-container">
+            
+        
+            <div class="event" onclick="window.location.href='event1.html';">
+                <img src="fresher day.webp" alt="Freshers Party">
+                <p>Freshers Party</p> 
+            </div>
+            <div class="event" onclick="window.location.href='event2.html';">
+                <img src="annualday.webp" alt="Annual Function">
+                <p>Annual Day</p>
+            </div>
+            <div class="event" onclick="window.location.href='event3.html';">
+                <img src="job seminar.webp" alt="Job Seminar">
+                <p>Job Seminar</p>
+            </div>
+            <br>
+            <div class="event" onclick="window.location.href='event4.html';">
+                <img src="resized_image.png" alt="symposiyum">
+                <p> symposiyum</p>
+            </div>
+            <div class="event" onclick="window.location.href='event5.html';">
+                <img src= "womens day.webp"alt="Freshers Party">
+                <p>womens day</p>
+            </div>
+            <div class="event" onclick="window.location.href='event6.html';">
+                <img src="science day.webp" alt="Job Seminar">
+                <p>science day</p>
+            </div>
+                <div class="event" onclick="window.location.href='event7.html';">
+                <img src="sports day.webp" alt="Annual Function">
+                <p>sports day</p>
+            </div>
+            <div class="event" onclick="window.location.href='event8.html';">
+                <img src= "food fest.webp"alt="Freshers Party">
+                <p>Food fest</p>
+            </div>
+            <div class="event" onclick="window.location.href='event9.html';">
+                <img src="republic day.webp"alt="Job Seminar">
+                <p>Republic day</p>
+                </div>
+                <div class="event" onclick="window.location.href='event10.html';">
+                <img src="graduation day.webp" alt="Annual Function">
+                <p>Graduation day</p>
+            </div>
+            <div class="event" onclick="window.location.href='event11.html';">
+                <img src= "farewell day.webp"alt="Freshers Party">
+                <p>Farewell day</p>
+            </div>
+            <div class="event" onclick="window.location.href='event12.html';">
+                <img src="independence day.webp" alt="Job Seminar">
+                <p>Independence day</p>
+                </div>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        function showEvent(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('eventImage').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+        
+            function showEvent(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event1.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}
+
+
+}
+function showEvent1(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event1Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent1(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event2.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}
+
+function showEvent2(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event2Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent2(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event3.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}      
+function showEvent3(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event3Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent3(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event4.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}      
+function showEvent4(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event4Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent4(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event5.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}      
+function showEvent5(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event5Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent5(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event6.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}      
+function showEvent6(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event6Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent6(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event7.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+} 
+function showEvent7(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event7Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent7(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event8.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}    
+function showEvent8(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event8Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent8(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event9.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}  
+function showEvent9(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event9Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent9(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event10.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}         
+function showEvent10(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event10Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent10(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event11.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}     
+function showEvent11(name, image, date, theme, status, minGuest, maxGuest, description) {
+            document.getElementById('eventTitle').innerText = title;
+            document.getElementById('event11Image').src = image;
+            document.getElementById('eventDescription').innerText = description;
+            document.getElementById('eventModal').style.display = 'flex';
+}       
+            function showEvent11(name, image, date, theme, status, minGuest, maxGuest, description) {
+    window.location.href = `event12.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(image)}&date=${encodeURIComponent(date)}&theme=${encodeURIComponent(theme)}&status=${encodeURIComponent(status)}&minGuest=${encodeURIComponent(minGuest)}&maxGuest=${encodeURIComponent(maxGuest)}&description=${encodeURIComponent(description)}`;
+}            
+        function closeModal() {
+            document.getElementById('eventModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

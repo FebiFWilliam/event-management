@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  
+
+<!-- </html>
+
+
+    < JavaScript for Navigation -->
+    <!-- <script>
+        function showPage(pageId) {
+            // Hide all sections
+            let pages = document.querySelectorAll('.content');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Show the selected section
+            document.getElementById(pageId).classList.add('active');
+        } -->
+    
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a id="home" href="#">Home</a></li>
+                <li><a id="about" href="#">About Project</a></li>
+                <li><a id="events" href="#">Events</a></li>
+                <li><a id="register" href="#">Student Registration</a></li>
+                <li><a id="login" href="#">Login</a></li>
+                <li><a id="contact" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // Function to navigate to another page
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        // Add event listeners to each navigation link
+        document.getElementById("home").addEventListener("click", () => navigateTo("index.html"));
+        document.getElementById("about").addEventListener("click", () => navigateTo("about.html"));
+        document.getElementById("events").addEventListener("click", () => navigateTo("events.html"));
+        document.getElementById("register").addEventListener("click", () => navigateTo("register.html"));
+        document.getElementById("login").addEventListener("click", () => navigateTo("login.html"));
+        document.getElementById("contact").addEventListener("click", () => navigateTo("contact.html"));
+    </script>
+    </body>
+    <div>
+    <section class="banner">
+            <img src="c6.webp" style="
+     
+    width: 100%; /* Expands to full width */
+    height: auto; /* Keeps original height */
+    max-height: 400px;">    
+    </section>
+    </div>
+    <div class="index">
+
+    <section class="content">
+        <div class="event-card">
+            <img src="p1.webp" alt="Event Image" class="event-image">
+            <h2 class="event-title">Summer Music Festival 2025🎶</h2>
+            <p class="event-short-description">
+                Enjoy an unforgettable summer night with top artists, DJs, and live bands!
+            </p>
+    
+            <!-- Full description (hidden by default) -->
+            <p class="event-full-description" id="full-description">
+                📅 Date: 15/07/2025<br>
+                📍 Location: Grace auditorium, Tuticorn<br>
+                🎶 Experience live performances from world-famous DJs and bands, stunning visual effects, 
+                and an incredible crowd energy. Don’t miss the ultimate music festival of the year!
+            </p>
+    
+            <!-- "Read More" and "Read Less" links -->
+            <a href="#" class="read-more-link" id="read-more" onclick="toggleDescription()">Read More</a>
+            <a href="#" class="read-less-link" id="read-less" onclick="toggleDescription()">Read Less</a>
+        </div>
+        </section class='content'>
+        <div class="event-card1">
+            <section>
+            <img src="c4.webp" alt="Event Image" class="event-image1">
+            <h2 class="event-title1">🍕Food Festival</h2>
+            <p class="event-short-description1">
+                "Savor delicious cuisines from around the world at the ultimate Food Festival 2025!" 🍽️🎉
+            </p>
+    
+            <!-- Full description (hidden by default) -->
+            <p class="event-full-description1" id="full-description1">
+                📅 Date: 15/08/2025<br>
+                📍 Location:College Campus, GCOE<br>
+                🍔 Indulge in mouthwatering dishes from top chefs, explore global flavors, and enjoy a feast of culinary delights. 🍕 Don’t miss the ultimate food festival of the year!
+
+            </p>
+    
+            <!-- "Read More" and "Read Less" links -->
+            <a href="#" class="read-more-link1" id="read-more1" onclick="toggleDescription1()">Read More</a>
+            <a href="#" class="read-less-link1" id="read-less1" onclick="toggleDescription1()">Read Less</a>
+        </div>
+    </section>
+        <div class="event-card2">
+            <img src="cultural fest.webp"alt="Event Image" class="event-image2">
+            <h2 class="event-title2">Cultural fest</h2>
+            <p class="event-short-description2">
+                A cultural fest is a lively celebration of art, music, dance, and traditions, bringing people together through creativity and heritage.🎉  
+            </p>
+    
+            <!-- Full description (hidden by default) -->
+            <p class="event-full-description2" id="full-description2">
+                📅 Date: 25/11/2025<br>
+                📍 Location: Grace<br>
+                🎶 Experience live performances from world-famous DJs and bands, stunning visual effects, 
+                and an incredible crowd energy. Don’t miss the ultimate music festival of the year!
+            </p>
+    
+            <!-- "Read More" and "Read Less" links -->
+            <a href="#" class="read-more-link2" id="read-more2" onclick="toggleDescription2()">Read More</a>
+            <a href="#" class="read-less-link2" id="read-less2" onclick="toggleDescription2()">Read Less</a>
+        </div>
+        <div class="event-card">
+            <img src="music fest.webp" alt="Event Image" class="event-image3">
+            <h2 class="event-title3">Summer Music Festival 2024</h2>
+            <p class="event-short-description3">
+                Enjoy an unforgettable summer night with top artists, DJs, and live bands!🎶🎤✨
+            </p>
+    
+            <!-- Full description (hidden by default) -->
+            <p class="event-full-description3" id="full-description3">
+                📅 Date: 15/07/2024<br>
+                📍 Location: Sunset Beach, California<br>
+                🎶 Experience live performances from world-famous DJs and bands, stunning visual effects, 
+                and an incredible crowd energy. Don’t miss the ultimate music festival of the year!
+            </p>
+    
+            <!-- "Read More" and "Read Less" links -->
+            <a href="#" class="read-more-link3" id="read-more3" onclick="toggleDescription3()">Read More</a>
+            <a href="#" class="read-less-link3" id="read-less3" onclick="toggleDescription3()">Read Less</a>
+        </div>
+    
+    
+    
+        <script src="scripts.js"></script>
+        
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2025 College Event Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

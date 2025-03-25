@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #560a3a;
+        
+            
+            margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #510d39;
+            padding: 10px;
+            color: white;
+            justify-content: space-around;  /* Ensures proper spacing */
+            align-items: center;
+        }
+
+
+        .navbar a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #510a32;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #570e42;
+            z-index: 1;
+            flex-direction: column;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: white;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 100vh; /* Prevents extra space */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+        
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            width: 600%;
+        }
+
+        .option-item {
+            background-color: #4d1033;
+            color: white;
+            width:50%;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+
+        .option-item:hover {
+            background-color: #520e38;
+        }
+
+        .right-images{
+
+        position:absolute;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; right: 20px; /* Keep images aligned to the right */
+    top: 120px; /* Adjust based on your layout */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between images */
+    align-items: flex-end; 
+}
+
+.right-images img {
+    width:40%;
+    margin-left: 20px; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Project</a>
+    <a href="#">Events</a>
+    <a href="#">Dashboard</a>
+    <div class="dropdown">
+        <a class="dropbtn" href="#">Administration</a>
+        <div class="dropdown-content">
+            <a href="#">Add New Event</a>
+            <a href="#">Add Event Program</a>
+            <a href="#">Add Program Type</a>
+            <a href="#">Add New Theme</a>
+            <a href="#">Add User</a>
+        </div>
+    </div>
+    <a href="#">Reports</a>
+    <a href="#">Logout</a>
+</div>
+
+<div class="container">
+
+
+    <div class="options">
+        <a href="#" class="option-item">Add New Event</a>
+        <a href="#" class="option-item">Add Event Program</a>
+        <a href="#" class="option-item">Add Program Type</a>
+        <a href="#" class="option-item">Add New Theme</a>
+        <a href="#" class="option-item">Add User</a>
+        <a href="#" class="option-item">Event Report</a>
+        <a href="#" class="option-item">Program Type Report</a>
+        <a href="#" class="option-item">Program Report</a>
+        <a href="#" class="option-item">Theme Reports</a>
+        <a href="#" class="option-item">Users Report</a>
+        <a href="#" class="option-item">My Account</a>
+        <a href="#" class="option-item">Change Password</a>
+        <a href="#" class="option-item">Logout</a>
+    </div>
+
+    <div class="right-images">
+        <img src="C:\Users\ZEAGATE\Downloads\christmas.webp" alt="Event Image 1">
+        <img src="C:\Users\ZEAGATE\Downloads\pongal.webp" alt="Event Image 2">
+    </div>
+    
+</div>
+
+</body>
+</html>
